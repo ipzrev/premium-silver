@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Jet";
+  src: url("../assets/fonts/JetBrainsMono-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Manege";
+  src: url("../assets/fonts/ManegeDemo-Light.ttf");
+  font-weight: 300;
+}

@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: chocolate;
+  padding: 0 24px;
+}
+
+:root {
+  --background-color: #ffffff;
+  --main-color: #999999;
+  --accent-color: #000000;
+  --error-color: #ff7575;
+  --font-size-s: 16px;
+  --font-size-m: 26px;
+  --font-size-l: 40px;
+  --font-size-xl: 64px;
+  --main-font: "Jet", monospace;
+  --accent-font: "Manege", serif;
+}
+
+h1 {
+  color: var(--accent-color);
+  font-family: var(--accent-font);
+  font-size: var(--font-size-xl);
+}
+
+.hero {
+  background-color: crimson;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-block: 46px;
+}
+
+.hero-title-left {
+  display: flex;
+  align-self: flex-start;
+  color: var(--main-color);
+}
+
+.hero-title-right {
+  display: flex;
+  align-self: flex-end;
+}
