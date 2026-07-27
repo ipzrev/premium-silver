@@ -18,18 +18,21 @@
     align-items: center;
     position: fixed;
     inset: 0;
-    background: #f8f6f3;
+    background: #fff;
     text-align: center;
   }
 
   .desktop h1 {
     font-size: 64px;
-    color: #000000;
+    color: #000;
+    margin-bottom: 46px;
   }
 
   .desktop p {
-    font-size: 20px;
+    max-width: 342px;
+    font-size: 16px;
     color: #666;
-    line-height: 1.6;
+    line-height: 150%;
+    margin-top: 46px;
   }
 }
