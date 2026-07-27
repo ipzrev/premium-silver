@@ -1,0 +1,35 @@
+.mobile {
+  display: block;
+}
+
+.desktop {
+  display: none;
+}
+
+@media (min-width: 481px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    background: #f8f6f3;
+    text-align: center;
+  }
+
+  .desktop h1 {
+    font-size: 64px;
+    color: #000000;
+  }
+
+  .desktop p {
+    font-size: 20px;
+    color: #666;
+    line-height: 1.6;
+  }
+}

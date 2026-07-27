@@ -7,16 +7,21 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/qr.css" />
 
     <title>Антон и Виталина</title>
   </head>
   <body>
-    <section class="hero">
-      <h1 class="hero-title-left">ЛЮБОВЬ - ЭТО...</h1>
-      <h1 class="hero-title-right">ВЫБОР</h1>
-    </section>
-
-    <section class="info">
+    <div class="mobile">
+      <section class="hero">
+        <h1 class="hero-title-left">ЛЮБОВЬ - ЭТО...</h1>
+        <div class="word-changing-container">
+          <div class="word-changing" id="changingWord"></div>
+        </div>
+        <div class="img-1"></div>
+      </section>
+      
+      <section class="info">
       <h2>Дорогие друзья!</h2>
       <div class="divider"></div>
       <div class="info-text">
@@ -30,5 +35,16 @@
         </p>
       </div>
     </section>
+    </div>
+
+    <div class="desktop">
+      <h1>QR-КОД</h1>
+      <img class="qr-image" src="./assets/images/qrcode-url.svg" alt="qrcode" />
+      <p>Чтобы открыть пригласительное, отсканируйте QR-код</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>
