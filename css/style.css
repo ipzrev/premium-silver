@@ -32,6 +32,7 @@ h2 {
   color: var(--accent-color);
   font-family: var(--accent-font);
   font-size: var(--font-size-m);
+  line-height: 140%;
 }
 
 p {
@@ -39,6 +40,25 @@ p {
   font-family: var(--main-font);
   font-size: var(--font-size-s);
   line-height: 150%;
+}
+
+.button {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  line-height: 140%;
+  font-family: var(--main-font);
+  font-size: var(--font-size-s);
+  text-decoration: none;
+}
+
+.a-a-v {
+  color: var(--main-color);
+  font-family: var(--accent-font);
+  font-size: var(--font-size-l);
+  line-height: 100%;
 }
 
 .divider {
@@ -54,7 +74,7 @@ p {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  padding-block: 46px;
+  padding-top: 64px;
 }
 
 .hero-title-left {
@@ -74,7 +94,7 @@ p {
   background-image: url("../assets/images/270cb56ae63579a7294e8b92ddf3cc5e.jpg");
   background-size: cover;
   background-position: center;
-  margin-bottom: 14px;
+  margin-bottom: 54px;
 }
 
 /* animation */
@@ -82,8 +102,8 @@ p {
 .word-changing-container {
   position: relative;
   width: 100%;
-  font-family: "Manege", serif;
-  font-size: 64px;
+  font-family: var(--accent-font);
+  font-size: var(--font-size-xl);
   line-height: 1;
   height: 1em;
   overflow: hidden;
@@ -95,7 +115,7 @@ p {
   inset: 0;
   height: 100%;
   font: inherit;
-  color: azure;
+  color: var(--background-color);
   text-transform: uppercase;
 }
 
@@ -131,4 +151,53 @@ p {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+/* location */
+
+.location {
+  text-align: center;
+}
+
+.location-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 46px;
+}
+
+/* timer */
+
+.timer-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: blueviolet;
+  padding-top: 64px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  background-color: chartreuse;
+}
+
+.timer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.timer-number {
+  font-family: "Manege", serif;
+  font-size: 64px;
+  line-height: 1;
+}
+
+.timer-label {
+  font-family: "Jet", monospace;
+  font-size: 16px;
+  color: #9c9c9c;
 }
