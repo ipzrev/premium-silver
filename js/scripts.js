@@ -136,3 +136,21 @@ function updateTimer() {
 
 updateTimer();
 setInterval(updateTimer, 1000);
+
+/* gallery */
+
+const gallery = document.querySelector(".gallery");
+const track = document.querySelector(".gallery-track");
+
+gsap.to(track, {
+  x: () => -(track.scrollWidth - gallery.offsetWidth),
+  ease: "none",
+  scrollTrigger: {
+    trigger: gallery,
+    start: "top top",
+    end: () => `+=${track.scrollWidth}`,
+    pin: true,
+    scrub: 1,
+    invalidateOnRefresh: true,
+  },
+});

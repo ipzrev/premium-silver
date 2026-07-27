@@ -6,6 +6,9 @@
 
 body {
   background-color: rgb(150, 210, 30);
+}
+
+.container {
   padding: 0 24px;
 }
 
@@ -164,6 +167,19 @@ p {
   flex-direction: column;
   gap: 8px;
   margin-bottom: 46px;
+}
+
+/* gallery */
+
+.gallery {
+  overflow: hidden;
+}
+
+.gallery-track {
+  padding-top: 64px;
+  display: flex;
+  gap: 10px;
+  width: max-content;
 }
 
 /* timer */
