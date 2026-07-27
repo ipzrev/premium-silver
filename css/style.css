@@ -223,3 +223,8 @@ p {
   font-size: 16px;
   color: #9c9c9c;
 }
+
+.form {
+  height: 800px;
+  background-color: #32829c;
+}
