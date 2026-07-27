@@ -109,6 +109,40 @@
           <span class="dress-code-color dress-code-color__white"></span>
         </div>
       </section>
+
+      <section class="form-container container">
+        <h2 class="form-title">Анкета</h2>
+        <div class="divider"></div>
+        <form class="form" id="form" novalidate>
+          <p id="toast" class="toast"></p>
+          <input
+            class="input"
+            type="text"
+            name="name"
+            placeholder="Фамилия и имя"
+            required
+          />
+          <p class="form-question">Сможете ли присутствовать?</p>
+          <div class="label-radio-container">
+            <label class="label-radio">
+              <input type="radio" name="attendance" value="Да" required />
+              <span class="custom-radio"></span>
+              <span>С удовольствием приду</span>
+            </label>
+
+            <label class="label-radio">
+              <input type="radio" name="attendance" value="Нет" required />
+              <span class="custom-radio"></span>
+              <span>К сожалению, не могу</span>
+            </label>
+          </div>
+
+          <button class="form-button button">Отправить</button>
+          <p class="form-text">
+            Пожалуйста подтвердите ваше присутствие до 18.08.26
+          </p>
+        </form>
+      </section>
     </div>
 
     <div class="desktop">

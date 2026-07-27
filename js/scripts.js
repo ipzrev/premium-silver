@@ -154,3 +154,63 @@ gsap.to(track, {
     invalidateOnRefresh: true,
   },
 });
+
+/* form */
+
+const form = document.getElementById("form");
+const button = document.querySelector(".form-button");
+const toast = document.getElementById("toast");
+
+const SCRIPT_URL =
+  "https://script.google.com/macros/s/AKfycbwXTx66KXFb_VH7uETOK7SdsNnaNoLGoCbAlH6M2XhAkRYdDFoFcRd5iuRUW_AnFLIh/exec";
+
+function showToast(text, type = "success") {
+  toast.textContent = text;
+
+  toast.className = "toast";
+
+  if (type === "error") {
+    toast.classList.add("toast-error");
+  } else {
+    toast.classList.add("toast-success");
+  }
+
+  toast.classList.add("show");
+
+  setTimeout(() => {
+    toast.classList.remove("show");
+  }, 3000);
+}
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const name = form.elements.name.value.trim();
+  const attendance = form.elements.attendance.value;
+
+  if (!name || !attendance) {
+    showToast("Заполните все поля", "error");
+    return;
+  }
+
+  const data = new FormData(form);
+
+  button.disabled = true;
+  button.textContent = "Отправка...";
+
+  try {
+    await fetch(SCRIPT_URL, {
+      method: "POST",
+      body: data,
+      mode: "no-cors",
+    });
+
+    form.reset();
+    showToast("Ответ отправлен");
+  } catch (err) {
+    console.error(err);
+    showToast("Не удалось отправить форму", "error");
+  } finally {
+    button.disabled = false;
+    button.textContent = "Отправить";
+  }
+});
