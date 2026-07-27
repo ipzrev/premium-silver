@@ -38,6 +38,7 @@ p {
   color: var(--main-color);
   font-family: var(--main-font);
   font-size: var(--font-size-s);
+  line-height: 150%;
 }
 
 .divider {
