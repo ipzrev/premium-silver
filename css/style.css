@@ -182,6 +182,12 @@ p {
   width: max-content;
 }
 
+.gallery-image {
+  height: 400px;
+  width: 250px;
+  object-fit: cover;
+}
+
 /* timer */
 
 .timer-block {
