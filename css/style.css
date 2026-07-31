@@ -17,6 +17,8 @@ body {
   --main-color: #999999;
   --accent-color: #000000;
   --error-color: #ff7575;
+  --input-color: #f9f9f9;
+  --input-accent-color: #cccccc;
   --font-size-s: 16px;
   --font-size-m: 26px;
   --font-size-l: 40px;
@@ -303,10 +305,10 @@ a {
 }
 
 .input {
-  background-color: var(--background-color);
+  background-color: var(--input-color);
   font-family: var(--main-font);
   border: none;
-  border-bottom: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--input-accent-color);
   color: var(--accent-color);
   margin-bottom: 46px;
   padding: 16px;
