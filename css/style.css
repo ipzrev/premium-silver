@@ -97,21 +97,13 @@ a {
 }
 
 .img-1 {
-  height: 440px;
   width: 342px;
-  background-image: url("../assets/images/image-1.png");
-  background-size: cover;
-  background-position: center;
   margin-bottom: 54px;
 }
 
 .img-2 {
   margin-block: 64px;
-  height: 547px;
   width: 342px;
-  background-image: url("../assets/images/image-5.png");
-  background-size: cover;
-  background-position: center;
 }
 
 /* animation */
